@@ -123,6 +123,11 @@ function About() {
                 <div>My name is <span className="font-bold">Zhe CHEN (Boris)</span> ,</div>
                 <div>HKU Music Society Social and Welfare Secretary (2024-2025)</div>
                 <div className="font-normal ml-1"><span className="text-pink-600 font-bold">AI Developer from the Hubble Deep Field.</span></div>
+                <div className="flex justify-center mt-1">
+                    <a href="https://hits.sh/boris-jobs.github.io/">
+                        <img alt="Hits" src="https://hits.sh/boris-jobs.github.io.svg?color=0208be&labelColor=940606"/>
+                    </a>
+                </div>
             </div>
             <div className=" mt-4 relative md:my-8 pt-px bg-white w-32 md:w-48">
                 <div className="bg-white absolute rounded-full p-0.5 md:p-1 top-0 transform -translate-y-1/2 left-0"></div>
@@ -130,7 +135,6 @@ function About() {
             </div>
             <ul className=" mt-4 leading-tight tracking-tight text-sm md:text-base w-5/6 md:w-3/4 emoji-list">
                 <li className=" list-time"> My Github Profile: <span className="text-pink-600 font-bold"><a href="https://github.com/Boris-Jobs" target="_blank" rel="noreferrer"> https://github.com/Boris-Jobs</a></span>.</li>
-                <li className=" mt-3 list-pc">I'm a <span className=" font-medium">master student from HKU</span>, now I'm <span className="text-pink-600 font-bold">looking for full-time LLMs engineer roles!</span> ( Hit me up <a className='text-underline' href='mailto:cz1322553126@gmail.com'><u>cz1322553126@gmail.com</u></a>).</li>
                 <li className=" mt-3 list-building">Long Term Goal ✨ (1) Personalized 'J.A.R.V.I.S.' (called ".v"), (2) Multi-Agent Society. </li>
                 <li className=" mt-3 list-star">I'm interested in 0. Safety Alignment of MLLMs/LLMs; 1. Multi-agent Systems.</li>
             </ul>
@@ -148,15 +152,7 @@ function Education() {
                 </div>
             </div>
             <ul className=" w-10/12  mt-4 ml-4 px-0 md:px-1">
-                <li className="list-disc mt-5">
-                    <div className=" text-lg md:text-xl text-left font-bold leading-tight">
-                        PFSCT: A penalty function semi-continuous thresholding methods for constraints of hashing problems
-                    </div>
-                    <div className=" text-sm text-gray-400 mt-0.5">Journal of Visual Communication and Image Representation 2022</div>
-                    <div className=" text-sm md:text-base">Qian Chen, Zhengwei Shen, Zhe Chen</div>
-                    <div className=" text-sm md:text-base"><span className="text-pink-600 font-bold">Research Area: Representation Learning, Optimization Algorithms</span></div>
-                    <div className=" text-sm md:text-base">Description: We introduce a novel approach to hash coding for large-scale image retrieval, addressing the challenges of discrete binary, uncorrelated, and balanced constraints. We propose the Penalty Function Semi-Continuous Thresholding (PFSCT) method, which combines a penalty function for handling orthogonality constraints with a semi-continuous thresholding technique to minimize quantization errors. The method is theoretically analyzed for equivalence to the original non-relaxed problem and demonstrated through extensive experiments on benchmark datasets like Cifar10, NUS-WIDE, and SUN397. Results show that PFSCT significantly improves retrieval accuracy and computational efficiency compared to existing methods, offering a robust solution for hash coding in high-dimensional data scenarios.</div>
-                </li>
+
                 <li className="list-disc mt-5">
                     <div className=" text-lg md:text-xl text-left font-bold leading-tight">
                         EPE-P: Evidence-based Parameter-efficient Prompting for Multimodal Learning with Missing Modalities
@@ -165,6 +161,15 @@ function Education() {
                     <div className=" text-sm md:text-base">Zhe Chen, Xun Lin, Yawen Cui, Zitong Yu</div>
                     <div className=" text-sm md:text-base"><span className="text-pink-600 font-bold">Research Area: Robustness of Multimodal LLMs</span></div>
                     <div className=" text-sm md:text-base">Description: We introduce Evidence-based Parameter-efficient Prompting (EPE-P), a novel approach to address the complexities of multimodal learning when modalities are missing. Traditional methods suffer from parameter redundancy and suboptimal performance due to the need for extensive prompt designs for each missing modality scenario. EPE-P tackles this by employing a single comprehensive prompt matrix alongside modality-specific weight matrices, reducing the number of parameters while enhancing model efficiency. Our method utilizes a new Block-wise Kronecker-like Multiplication (BK-M) for prompt generation and introduces an Evidence-based Loss function grounded in Evidential Deep Learning to manage uncertainty in missing modality scenarios. Evaluations on MM-IMDb and Hateful Memes datasets demonstrate that EPE-P not only achieves superior performance in terms of F1-Macro and AUROC metrics but also significantly reduces the parameter count compared to existing techniques. This work promises to advance multimodal learning by offering a more streamlined, effective, and uncertainty-aware approach to handling incomplete data.</div>
+                </li>
+                <li className="list-disc mt-5">
+                    <div className=" text-lg md:text-xl text-left font-bold leading-tight">
+                        PFSCT: A penalty function semi-continuous thresholding methods for constraints of hashing problems
+                    </div>
+                    <div className=" text-sm text-gray-400 mt-0.5">Journal of Visual Communication and Image Representation 2022</div>
+                    <div className=" text-sm md:text-base">Qian Chen, Zhengwei Shen, Zhe Chen</div>
+                    <div className=" text-sm md:text-base"><span className="text-pink-600 font-bold">Research Area: Representation Learning, Optimization Algorithms</span></div>
+                    <div className=" text-sm md:text-base">Description: We introduce a novel approach to hash coding for large-scale image retrieval, addressing the challenges of discrete binary, uncorrelated, and balanced constraints. We propose the Penalty Function Semi-Continuous Thresholding (PFSCT) method, which combines a penalty function for handling orthogonality constraints with a semi-continuous thresholding technique to minimize quantization errors. The method is theoretically analyzed for equivalence to the original non-relaxed problem and demonstrated through extensive experiments on benchmark datasets like Cifar10, NUS-WIDE, and SUN397. Results show that PFSCT significantly improves retrieval accuracy and computational efficiency compared to existing methods, offering a robust solution for hash coding in high-dimensional data scenarios.</div>
                 </li>
             </ul>
         </>
