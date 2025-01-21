@@ -1,8 +1,8 @@
 {
-  "name": "borisjobs-portfolio",
+  "name": "borisdotv-portfolio",
   "version": "2.0.0",
   "private": true,
-  "homepage": "https://boris-jobs.github.io",
+  "homepage": "https://boris-dotv.github.io",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

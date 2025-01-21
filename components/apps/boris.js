@@ -123,18 +123,13 @@ function About() {
                 <div>My name is <span className="font-bold">Zhe CHEN (Boris)</span> ,</div>
                 <div>HKU Music Society Social and Welfare Secretary (2024-2025)</div>
                 <div className="font-normal ml-1"><span className="text-pink-600 font-bold">AI Developer from the Hubble Deep Field.</span></div>
-                <div className="flex justify-center mt-1">
-                    <a href="https://hits.sh/boris-jobs.github.io/">
-                        <img alt="Hits" src="https://hits.sh/boris-jobs.github.io.svg?color=0208be&labelColor=940606"/>
-                    </a>
-                </div>
             </div>
             <div className=" mt-4 relative md:my-8 pt-px bg-white w-32 md:w-48">
                 <div className="bg-white absolute rounded-full p-0.5 md:p-1 top-0 transform -translate-y-1/2 left-0"></div>
                 <div className="bg-white absolute rounded-full p-0.5 md:p-1 top-0 transform -translate-y-1/2 right-0"></div>
             </div>
             <ul className=" mt-4 leading-tight tracking-tight text-sm md:text-base w-5/6 md:w-3/4 emoji-list">
-                <li className=" list-time"> My Github Profile: <span className="text-pink-600 font-bold"><a href="https://github.com/Boris-Jobs" target="_blank" rel="noreferrer"> https://github.com/Boris-Jobs</a></span>.</li>
+                <li className=" list-time"> My Github Profile: <span className="text-pink-600 font-bold"><a href="https://github.com/Boris-Jobs" target="_blank" rel="noreferrer"> https://github.com/boris-dotv/</a></span>.</li>
                 <li className=" mt-3 list-building">Long Term Goal ✨ (1) Personalized 'J.A.R.V.I.S.' (called ".v"), (2) Multi-Agent Society. </li>
                 <li className=" mt-3 list-star">I'm interested in 0. Safety Alignment of MLLMs/LLMs; 1. Multi-agent Systems.</li>
             </ul>
