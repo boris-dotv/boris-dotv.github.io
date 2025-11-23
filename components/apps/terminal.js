@@ -241,13 +241,6 @@ export class Terminal extends Component {
                 let str = this.current_directory;
                 result = str.replace("~", "/home/boris")
                 break;
-            case "code":
-                if (words[0] === "." || words.length === 0) {
-                    this.props.openApp("vscode");
-                } else {
-                    result = "Command '" + main + "' not found, or not yet implemented.<br>Available Commands:[ cd, ls, pwd, echo, clear, exit, mkdir, code, avril, chrome, about-boris, todoist, trash, settings, sendmsg]";
-                }
-                break;
             case "echo":
                 result = this.xss(words.join(" "));
                 break;

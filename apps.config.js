@@ -1,6 +1,5 @@
 import displayAvril from './components/apps/avril';
 import displayGithub from './components/apps/github';
-import displayVsCode from './components/apps/vscode';
 import { displayTerminal } from './components/apps/terminal';
 import { displaySettings } from './components/apps/settings';
 import { displayChrome } from './components/apps/chrome';
@@ -54,15 +53,6 @@ const apps = [
         favourite: false,
         desktop_shortcut: false,
         screen: displayTerminalCalc,
-    },
-    {
-        id: "vscode",
-        title: "Visual Studio Code (wode_scratchs)",
-        icon: './themes/Yaru/apps/vscode.png',
-        disabled: false,
-        favourite: true,
-        desktop_shortcut: false,
-        screen: displayVsCode,
     },
     {
         id: "terminal",
