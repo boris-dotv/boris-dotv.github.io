@@ -9,5 +9,5 @@ export default function Avril() {
 }
 
 export const displayAvril = () => {
-    <Avril> </Avril>
+    return <Avril />
 }

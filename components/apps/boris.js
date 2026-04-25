@@ -16,9 +16,7 @@ export class AboutBoris extends Component {
     componentDidMount() {
         this.screens = {
             "about": <About />,
-            "education": <Education />,
             "projects": <Projects />
-            // "resume": <Resume />,
         }
 
         let lastVisitedScreen = localStorage.getItem("about-section");
@@ -56,10 +54,6 @@ export class AboutBoris extends Component {
                 <div id="about" tabIndex="0" onFocus={this.changeScreen} className={(this.state.active_screen === "about" ? " bg-ub-orange bg-opacity-100 hover:bg-opacity-95" : " hover:bg-gray-50 hover:bg-opacity-5 ") + " w-28 md:w-full md:rounded-none rounded-sm cursor-default outline-none py-1.5 focus:outline-none duration-100 my-0.5 flex justify-start items-center pl-2 md:pl-2.5"}>
                     <img className=" w-3 md:w-4" alt="about boris" src="./themes/Yaru/status/about.svg" />
                     <span className=" ml-1 md:ml-2 text-gray-50 ">About Me</span>
-                </div>
-                <div id="education" tabIndex="0" onFocus={this.changeScreen} className={(this.state.active_screen === "education" ? " bg-ub-orange bg-opacity-100 hover:bg-opacity-95" : " hover:bg-gray-50 hover:bg-opacity-5 ") + " w-28 md:w-full md:rounded-none rounded-sm cursor-default outline-none py-1.5 focus:outline-none duration-100 my-0.5 flex justify-start items-center pl-2 md:pl-2.5"}>
-                    <img className=" w-3 md:w-4" alt="boris' education" src="./themes/Yaru/status/education.svg" />
-                    <span className=" ml-1 md:ml-2 text-gray-50 ">Researchs</span>
                 </div>
                 <div id="projects" tabIndex="0" onFocus={this.changeScreen} className={(this.state.active_screen === "projects" ? " bg-ub-orange bg-opacity-100 hover:bg-opacity-95" : " hover:bg-gray-50 hover:bg-opacity-5 ") + " w-28 md:w-full md:rounded-none rounded-sm cursor-default outline-none py-1.5 focus:outline-none duration-100 my-0.5 flex justify-start items-center pl-2 md:pl-2.5"}>
                     <img className=" w-3 md:w-4" alt="boris' projects" src="./themes/Yaru/status/projects.svg" />
@@ -111,7 +105,7 @@ function About() {
             {/* <div className="w-30 md:w-40 my-6 mt-30 bg-white border-4 border-white rounded-full overflow-hidden mb-8 md:mb-12">
                 <img className="w-full h-full object-cover" src="./images/logos/alexander.jpg" alt="Boris Jobs Logo" />
             </div> */}
-            <div className="w-28 md:w-30 my-20 bg-black rounded-full">
+            <div className="w-36 md:w-44 my-16 bg-black rounded-full overflow-hidden shadow-lg ring-2 ring-gray-600 ring-opacity-50">
                 <img className="w-full" src="./images/logos/alexander-modified.png" alt="Boris Jobs Logo" />
             </div>
             <div className=" mt-2 md:mt-8 text-lg md:text-2xl text-center px-1">
@@ -131,69 +125,69 @@ function About() {
     )
 }
 
-function Education() {
-    return (
-        <>
-            <div className=" font-medium relative text-2xl mt-2 md:mt-4 mb-4">
-                Researchs
-                <div className="absolute pt-px bg-white mt-px top-full w-full">
-                    <div className="bg-white absolute rounded-full p-0.5 md:p-1 top-0 transform -translate-y-1/2 left-full"></div>
-                    <div className="bg-white absolute rounded-full p-0.5 md:p-1 top-0 transform -translate-y-1/2 right-full"></div>
-                </div>
-            </div>
-            <ul className=" w-10/12  mt-4 ml-4 px-0 md:px-1">
-
-                <li className="list-disc mt-5">
-                    <div className=" text-lg md:text-xl text-left font-bold leading-tight">
-                        EPE-P: Evidence-based Parameter-efficient Prompting for Multimodal Learning with Missing Modalities
-                    </div>
-                    <div className=" text-sm text-gray-400 mt-0.5">IEEE International Conference on Acoustics, Speech, and Signal Processing 2025</div>
-                    <div className=" text-sm md:text-base">Zhe Chen, Xun Lin, Yawen Cui, Zitong Yu</div>
-                    <div className=" text-sm md:text-base"><span className="text-pink-600 font-bold">Research Area: Robustness of Multimodal LLMs</span></div>
-                </li>
-                <li className="list-disc mt-5">
-                    <div className=" text-lg md:text-xl text-left font-bold leading-tight">
-                        PFSCT: A penalty function semi-continuous thresholding methods for constraints of hashing problems
-                    </div>
-                    <div className=" text-sm text-gray-400 mt-0.5">Journal of Visual Communication and Image Representation 2022</div>
-                    <div className=" text-sm md:text-base">Qian Chen, Zhengwei Shen, Zhe Chen</div>
-                    <div className=" text-sm md:text-base"><span className="text-pink-600 font-bold">Research Area: Representation Learning, Optimization Algorithms</span></div>
-                </li>
-            </ul>
-        </>
-    )
-}
-
 function Projects() {
     const project_list = [
         {
-            name: "Pendulum-Period-Discussion",
-            date: "2023",
-            link: "https://github.com/Boris-Jobs/Pendulum-Period-Discussion",
+            name: "llm.v",
+            date: "2026",
+            link: "https://github.com/boris-dotv/llm.v",
             description: [
-                "It was a question that I had wanted to study since high school, and it was only after graduation from university that I had time to complete the research on this topic of Pendulum Period.",
+                "Training a ~4B SALA hybrid model (Sparse + Linear Attention) for math and code reasoning, based on Karpathy's nanochat. Targets 128K context on 8xH100 with two-stage code CPT pipeline.",
             ],
-            domains: ["Elliptic Integration", "Physics"]
-        }
+            domains: ["LLM Training", "SALA", "PyTorch"]
+        },
+        {
+            name: "fintalk.v",
+            date: "2025-2026",
+            link: "https://github.com/boris-dotv/fintalk.v",
+            description: [
+                "Agent-ready financial data analysis system. NL2SQL with GRPO-trained models, dual-agent orchestration, MCP Server — 999 companies, one command. Adopted by PolyU research center.",
+            ],
+            domains: ["Multi-Agent", "NL2SQL", "MCP"]
+        },
+        {
+            name: "hku.rag.v",
+            date: "2025",
+            link: "https://github.com/boris-dotv/hku.rag.v",
+            description: [
+                "Agentic RAG with ReAct Loop, query rewriting, query decomposition, and multi-stage reasoning. Hybrid retrieval (BM25 + Dense + Reranker) with submodular diversity optimization.",
+            ],
+            domains: ["RAG", "ReAct Agent", "NLP"]
+        },
+        {
+            name: "soar",
+            date: "2026",
+            link: "https://github.com/oldMoneyy/soar",
+            description: [
+                "Interactive HTML visualizations for SALA architecture, single-layer transformer forward pass, FlashInfer kernels, and KV cache computation analysis.",
+            ],
+            domains: ["Visualization", "Transformer"]
+        },
+        {
+            name: "Pendulum_Period_Analysis.v",
+            date: "2023",
+            link: "https://github.com/boris-dotv/Pendulum_Period_Analysis.v",
+            description: [
+                "A rigorous analysis of simple pendulum period using elliptic integrals — a question I wanted to study since high school.",
+            ],
+            domains: ["Elliptic Integrals", "Physics"]
+        },
     ];
 
     const tag_colors = {
-        "javascript": "yellow-300",
-        "firebase": "red-600",
-        "firestore": "red-500",
-        "firebase auth": "red-400",
-        "chrome-extension": "yellow-400",
-        "flutter": "blue-400",
-        "dart": "blue-500",
-        "react-native": "purple-500",
-        "html5": "pink-600",
-        "sass": "pink-400",
-        "tensorflow": "yellow-600",
-        "django": "green-600",
-        "python": "green-200",
-        "codeforces-api": "gray-300",
-        "tailwindcss": "blue-300",
-        "next.js": "purple-600"
+        "LLM Training": "yellow-300",
+        "SALA": "red-400",
+        "PyTorch": "orange-500",
+        "Multi-Agent": "purple-500",
+        "NL2SQL": "green-400",
+        "MCP": "blue-400",
+        "RAG": "blue-300",
+        "ReAct Agent": "pink-500",
+        "NLP": "green-200",
+        "Visualization": "yellow-400",
+        "Transformer": "red-500",
+        "Elliptic Integrals": "gray-300",
+        "Physics": "blue-500",
     }
 
     return (
@@ -215,7 +209,7 @@ function Projects() {
                                 <div className="flex flex-wrap justify-between items-center">
                                     <div className='flex justify-center items-center'>
                                         <div className=" text-base md:text-lg mr-2">{project.name.toLowerCase()}</div>
-                                        <iframe src={`https://ghbtns.com/github-btn.html?user=Boris-Jobs&repo=${projectName}&type=star&count=true`} frameBorder="0" scrolling="0" width="150" height="20" title={project.name.toLowerCase()+"-star"}></iframe>
+                                        <iframe src={`https://ghbtns.com/github-btn.html?user=boris-dotv&repo=${projectName}&type=star&count=true`} frameBorder="0" scrolling="0" width="150" height="20" title={project.name.toLowerCase()+"-star"}></iframe>
                                     </div>
                                     <div className="text-gray-300 font-light text-sm">{project.date}</div>
                                 </div>
