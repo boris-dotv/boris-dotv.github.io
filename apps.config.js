@@ -12,7 +12,7 @@ const apps = [
     {
         id: "about-boris",
         title: "About Me (Double-Click!)",
-        icon: './themes/Yaru/apps/about-me.svg',
+        icon: './themes/Yaru/system/earth.png',
         disabled: false,
         favourite: true,
         desktop_shortcut: true,
@@ -21,7 +21,7 @@ const apps = [
     {
         id: "github",
         title: "Github",
-        icon: './themes/Yaru/apps/code.svg',
+        icon: './themes/Yaru/apps/github.png',
         disabled: false,
         favourite: false,
         desktop_shortcut: false,
@@ -30,7 +30,7 @@ const apps = [
     {
         id: "chrome",
         title: "Google Chrome",
-        icon: './themes/Yaru/apps/browser.svg',
+        icon: './themes/Yaru/apps/chrome.png',
         disabled: false,
         favourite: true,
         desktop_shortcut: true,
@@ -39,7 +39,7 @@ const apps = [
     {
         id: "avril",
         title: "beloved Avril",
-        icon: './themes/Yaru/apps/music.svg',
+        icon: './themes/Yaru/apps/letgo.png',
         disabled: false,
         favourite: true,
         desktop_shortcut: false,
@@ -48,7 +48,7 @@ const apps = [
     {
         id: "calc",
         title: "Calculator",
-        icon: './themes/Yaru/apps/calculator.svg',
+        icon: './themes/Yaru/apps/calc.png',
         disabled: false,
         favourite: false,
         desktop_shortcut: false,
@@ -57,7 +57,7 @@ const apps = [
     {
         id: "terminal",
         title: "Terminal",
-        icon: './themes/Yaru/apps/terminal.svg',
+        icon: './themes/Yaru/apps/bash.png',
         disabled: false,
         favourite: true,
         desktop_shortcut: false,
@@ -66,7 +66,7 @@ const apps = [
     {
         id: "settings",
         title: "Settings",
-        icon: './themes/Yaru/apps/gear.svg',
+        icon: './themes/Yaru/apps/gnome-control-center.png',
         disabled: false,
         favourite: false,
         desktop_shortcut: false,
@@ -75,7 +75,7 @@ const apps = [
     {
         id: "trash",
         title: "Trash",
-        icon: './themes/Yaru/apps/trash.svg',
+        icon: './themes/Yaru/system/user-trash-full.png',
         disabled: false,
         favourite: false,
         desktop_shortcut: false,
@@ -84,7 +84,7 @@ const apps = [
     {
         id: "gedit",
         title: "Contact Me",
-        icon: './themes/Yaru/apps/mail.svg',
+        icon: './themes/Yaru/apps/gedit.png',
         disabled: false,
         favourite: false,
         desktop_shortcut: false,
